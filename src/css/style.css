@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 
 .upLeft,
@@ -9,103 +9,125 @@ body {
 .mdMd,
 .mdRight,
 .downLeft,
-.downRight,
-.downLeft,
-.upBottom {
-    height  : 200px;
-    position: relative;
+.downMd,
+.downRight {
+  height: 200px;
+  position: relative;
 }
 
 * {
-    padding   : 0;
-    margin    : 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
 .upLeft {
-    border-right : 4px solid #111;
-    border-bottom: 4px solid #111;
+  border-right: 4px solid #111;
+  border-bottom: 4px solid #111;
 }
 
 .upRight {
-    border-left  : 4px solid #111;
-    border-bottom: 4px solid #111;
+  border-left: 4px solid #111;
+  border-bottom: 4px solid #111;
 }
 
-
 .downLeft {
-    border-top  : 4px solid #111;
-    border-right: 4px solid #111;
+  border-top: 4px solid #111;
+  border-right: 4px solid #111;
 }
 
 .downRight {
-    border-top : 4px solid #111;
-    border-left: 4px solid #111;
+  border-top: 4px solid #111;
+  border-left: 4px solid #111;
 }
 
-
 .bulb {
-    height          : 30px;
-    width           : 30px;
-    background-color: #111;
-    border-radius   : 50%;
-    margin          : 15px auto;
-    transition      : background 500ms;
+  height: 30px;
+  width: 30px;
+  background-color: #111;
+  border-radius: 50%;
+  margin: 15px auto;
+  transition: background 500ms;
 }
 
 .bulb.green {
-    background-color: green;
+  background-color: green;
 }
 
 .bulb.yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .bulb.red {
-    background-color: red;
+  background-color: red;
 }
-
 
 .traffic-light-n-s {
-    position        : relative;
-    height          : 155px;
-    width           : 50px;
-    background-color: #333;
-    border-radius   : 15px;
-    margin          : 20px 0;
-    padding         : 5px;
+  position: absolute;
+  height: 155px;
+  width: 50px;
+  background-color: #333;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 5px;
 }
 
-.traffic-light-w, .traffic-light-e{
-    position        : relative;
-    height          : 50px;
-    width           : 155px;
-    background-color: #333;
-    border-radius   : 15px;
-    margin          : 120px 0px;
-    padding         : 5px;
+.traffic-light-w-e {
+  position: absolute;
+  height: 50px;
+  width: 155px;
+  background-color: #333;
+  border-radius: 15px;
 }
 
 .traffic-light-n {
-    float: left;
+  left: 10px;
 }
 
 .traffic-light-s {
-    float: right;
+  right: 10px;
 }
 
 .traffic-light-w {
-    float: right;
-    top: 10px;
+  bottom: 10px;
+  right: 10px;
 }
 
 .traffic-light-e {
-    left: 10px;
-    top: 10px;
+  left: 10px;
+  top: 10px;
 }
 
-.traffic-light-w .bulb {
-    display: inline-block;
-    margin: 6px;
+.traffic-light-w .bulb,
+.traffic-light-e .bulb {
+  display: inline-block;
+  margin: 9px;
 }
+
+.bi-arrow-up {
+  text-align: center;
+}
+
+.fa {
+  font-size: 50px;
+  color: aqua;
+  display: inline-block;
+}
+
+.arrow-n,
+.arrow-s {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 70px;
+}
+
+.arrow-w,
+.arrow-e {
+  text-align: center;
+}
+
+.arrow-e {
+    margin-top: 25px;
+}
+
+
