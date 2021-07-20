@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="src/css/style.css">
     <title>Traffic Light</title>
 </head>
@@ -19,22 +21,27 @@
         <div class="row align-items-start row-cols-3">
             <div class="upLeft col">
             </div>
-            <div class="col">
+            <div class="upMd col">
                 <div class="traffic-light-n-s traffic-light-n">
                     <div class="bulb red">
                     </div>
-                    <div class="bulb yellow">
+                    <div class="bulb">
                     </div>
-                    <div class="bulb green">
+                    <div class="bulb">
                     </div>
+                </div>
+                <div class="arrow-n">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+
                 </div>
             </div>
             <div class="upRight col">
             </div>
         </div>
         <div class="row align-items-start row-cols-3">
-            <div class="upBottom col">
-                <div class="traffic-light-w traffic-light-w">
+            <div class="mdLeft col">
+                <div class="traffic-light-w-e traffic-light-w">
                     <div class="bulb red">
                     </div>
                     <div class="bulb yellow">
@@ -42,16 +49,26 @@
                     <div class="bulb green">
                     </div>
                 </div>
+                <div class="arrow-w">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <br>
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </div>
             </div>
-            <div class="col">
+            <div class="mdMd col">
             </div>
-            <div class="col">
-                <div class="traffic-light-e traffic-light-e">
+            <div class="mdRight col">
+                <div class="traffic-light-w-e traffic-light-e">
                     <div class="bulb red">
                     </div>
                     <div class="bulb yellow">
                     </div>
                     <div class="bulb green">
+                    </div>
+                    <div class="arrow-e">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <br>
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -59,7 +76,7 @@
         <div class="row align-items-start row-cols-3">
             <div class="downLeft col">
             </div>
-            <div class="col">
+            <div class="downMd col">
                 <div class="traffic-light-n-s traffic-light-s">
                     <div class="bulb red">
                     </div>
@@ -67,12 +84,19 @@
                     </div>
                     <div class="bulb green">
                     </div>
+                
+                </div>
+                <div class="arrow-s">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="downRight col">
             </div>
         </div>
     </div>
+    <script src="traffic-light.js"></script>
+
 </body>
 
 </html>
