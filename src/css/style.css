@@ -118,7 +118,7 @@ body {
 .arrow-s {
   text-align: center;
   vertical-align: middle;
-  margin-top: 70px;
+  margin-top: 24px;
 }
 
 .arrow-w,
@@ -127,7 +127,11 @@ body {
 }
 
 .arrow-e {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
-
+.countdown p {
+  font-size: 15px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
